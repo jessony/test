@@ -3,16 +3,18 @@
 #include <math.h>
 #include "segement.h"
 #include<iostream>
+#include "frame.h"
 using namespace std;
 solver::solver()
 {
 }
-void solver::solverangleset(double ag1,double ag2){
+void solver::solveranglesituationset(double ag1,double ag2){
+	
 	    joint1angle=ag1;
         joint2angle=ag2;	
 	
 }
-void solver::solverdestpointset(double dex,double dey){
+void solver::solverdestpointsituationset(double dex,double dey){
 	destpoint.set(dex,dey);
 }
 void solver::normalsolve(segement s1,segement s2){

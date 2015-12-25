@@ -2,13 +2,14 @@
 #define SOLVER_H
 #include "point.h"
 #include "segement.h"
+#include "frame.h"
 
 class solver
 {
 	public:
 		solver();
-		void solverangleset(double,double);
-		void solverdestpointset(double ,double );
+		void solveranglesituationset(double,double);
+		void solverdestpointsituationset(double ,double );
 		void normalsolve(segement,segement);
 		void inversolve(segement,segement);
 		double get_solutionpointx(); 
